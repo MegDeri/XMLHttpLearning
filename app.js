@@ -12,8 +12,8 @@ firstReq.addEventListener('load', function () {
 	filmReq.addEventListener('load', function () {
 		console.log('SECOND REQUEST WORKED!!!');
 		console.log(this);
-		// const filmData = JSON.parse(this.responseText);
-		// console.log(filmData.berries);
+		const filmData = JSON.parse(this.responseText);
+		console.log(filmData.berries);
 	});
 	filmReq.addEventListener('error', function (e) {
 		console.log('ERROR!!', e);
