@@ -15,3 +15,29 @@ axios.get('https://pokeapi.co/api/v2/berry/cheri')
     .catch(err => {
         console.log(err)
     });
+
+    // second method
+
+// CHAINING REQUESTS USING AXIOS
+// ********************************
+/*const fetchNextPlanets = (url = 'https://swapi.co/api/planets/') => {
+	console.log(url);
+	return axios.get(url);
+};
+const printPlanets = ({ data }) => {
+	console.log(data);
+	for (let planet of data.results) {
+		console.log(planet.name);
+	}
+	return Promise.resolve(data.next);
+};
+
+fetchNextPlanets()
+	.then(printPlanets)
+	.then(fetchNextPlanets)
+	.then(printPlanets)
+	.then(fetchNextPlanets)
+	.then(printPlanets)
+	.catch((err) => {
+		console.log('ERROR!!', err);
+	});*/
